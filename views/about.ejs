@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Explorer</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/about.css">
+
+</head>
+<%- include("partials/header.ejs") %>
+
+    <body>
+        <header class="site-header">
+            <h1 class="site-title">More About Recipe Explorer
+            </h1>
+            <p class="site-subtitle">
+                Where family traditions and new flavors come together for everyone to enjoy.</p>
+        </header>
+        <div class="container about-section">
+            <div class="row mb-4">
+                <!-- First Image -->
+                <div class="col-md-6">
+                    <img src="https://res.cloudinary.com/rainforest-cruises/images/c_fill,g_auto/f_auto,q_auto/v1620068179/Traditional-Cambodian-Dishes-To-Eat-Amok/Traditional-Cambodian-Dishes-To-Eat-Amok.jpg"
+                        alt="Delicious Food" class="about-img">
+                </div>
+                <!-- First Paragraph -->
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="about-text">
+                        Recipe Explorer is a platform dedicated to food lovers and home chefs. We bring together the
+                        best
+                        recipes, cooking tips, and food inspiration to help you create delicious meals for every
+                        occasion.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Second Paragraph -->
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="about-text">
+                        Our mission is to make cooking easy and enjoyable for everyone, regardless of skill level. From
+                        quick weeknight meals to elaborate holiday feasts, Silly Food is here to inspire you every step
+                        of the way.
+                    </p>
+                </div>
+                <!-- Second Image -->
+                <div class="col-md-6">
+                    <img src="https://res.cloudinary.com/rainforest-cruises/images/c_fill,g_auto/f_auto,q_auto/v1620068203/Traditional-Cambodian-Dishes-To-Eat-Khmer-Noodles/Traditional-Cambodian-Dishes-To-Eat-Khmer-Noodles.jpg"
+                        alt="Cooking Ingredients" class="about-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    <%- include("partials/footer.ejs") %>
+
+</html>

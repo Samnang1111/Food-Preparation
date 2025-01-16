@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Explorer</title>
+    <link rel="stylesheet" href="/index.css">
+
+</head>
+
+<%- include("partials/header.ejs") %>
+
+    <body>
+        <header>
+            <div>
+                <h1>Welcome to Recipe Explorer</h1>
+                <p>Discover delicious recipes from around the world!</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="features">
+                <div>
+                    <h2>Why Choose Recipe Explorer?</h2>
+                    <div class="feature-cards">
+                        <div class="feature-card">
+                            <img src="https://bags-always-packed.com/wp-content/uploads/2023/06/easy-meals-to-cook-in-a-hostel.jpg"
+                                alt="Easy Recipes">
+                            <h3>Easy to Cook</h3>
+                            <p>Simple and straightforward recipes for all skill levels.</p>
+                        </div>
+                        <div class="feature-card">
+                            <img style="height: 50%;"
+                                src="https://www.naturemade.com/cdn/shop/articles/healthy-foods-to-eat.jpg?v=1611988563"
+                                alt="Healthy Options">
+                            <h3>Healthy Options</h3>
+                            <p>Curated recipes with balanced nutrition and great taste.</p>
+                        </div>
+                        <div class="feature-card">
+                            <img src="https://img.freepik.com/free-photo/world-food-day-celebration-with-world-ball-globe-surrounded-by-food_23-2151794107.jpg"
+                                alt="World Cuisine">
+                            <h3>World Cuisine</h3>
+                            <p>Explore dishes from Italian, Asian, and more cuisines!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="popular-recipes">
+                <div>
+                    <h2>Popular Recipes</h2>
+                    <div class="recipe-list">
+                        <% recipes.forEach(recipe=> { %>
+                            <a href="/recipes/<%= recipe.id %>" class="recipe-card">
+                                <img src="<%= recipe.image %>" alt="<%= recipe.name %>">
+                                <h3>
+                                    <%= recipe.name %>
+                                </h3>
+                                <p>Rating: <%= recipe.rating %> ⭐</p>
+                            </a>
+                            <% }); %>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <%- include("partials/footer.ejs") %>
+
+    </body>
+
+</html>

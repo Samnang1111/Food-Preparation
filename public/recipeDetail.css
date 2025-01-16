@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #FFB6C1, #FF6347);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Recipe Detail Container */
+.recipe-detail {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.recipe-detail h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Recipe Image */
+.recipe-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Recipe Metadata */
+.recipe-detail p {
+    font-size: 1.125rem;
+    margin: 8px 0;
+    color: #555;
+}
+
+.recipe-detail p span {
+    font-weight: 700;
+    color: #333;
+}
+
+.recipe-detail p .divider {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+/* Section Headings */
+.recipe-detail h3 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #444;
+    font-weight: 600;
+    border-bottom: 2px solid #e67e22;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Ingredient List */
+.recipe-detail ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.recipe-detail ul li {
+    font-size: 1.125rem;
+    margin-bottom: 5px;
+}
+
+/* Instruction List */
+.recipe-detail ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.recipe-detail ol li {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+}
+
+/* Back Button */
+.recipe-detail .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #e67e22;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.recipe-detail .back-button:hover {
+    background-color: #d35400;
+}

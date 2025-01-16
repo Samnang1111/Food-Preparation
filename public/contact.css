@@ -1,0 +1,163 @@
+/* General Styles */
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+    line-height: 1.6;
+}
+
+
+/* Header Styles */
+.site-header {
+    background: linear-gradient(to right, #FFDAB9, #FF6F61);
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+    /* Slightly increased padding for better spacing */
+    border-bottom: 5px solid #FF6F61;
+}
+
+.site-title {
+    font-size: 2.75rem;
+    /* Slightly larger font for emphasis */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    /* Subtle text shadow */
+}
+
+.site-subtitle {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin: 0;
+    opacity: 0.9;
+    /* Increased opacity for readability */
+}
+
+/* Contact Section Styles */
+.contact-title {
+    font-size: 2.75rem;
+    /* Increased font size for prominence */
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-intro {
+    font-size: 1.1rem;
+    /* Slightly larger font for readability */
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.info-item {
+    text-align: center;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    /* Increased padding for better spacing */
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    /* More rounded corners */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    max-width: 450px;
+    /* Increased max width for larger screens */
+}
+
+.info-item:hover {
+    transform: translateY(-8px);
+    /* Slightly more lift */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow on hover */
+}
+
+.info-item i {
+    color: rgb(213, 166, 78);
+    font-size: 3rem;
+    /* Larger icon size for emphasis */
+    margin-bottom: 1rem;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 1.1rem;
+    /* Slightly larger text for better readability */
+    color: #555;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background-color: #fff;
+    padding: 2.5rem;
+    /* Increased padding for a spacious layout */
+    border-radius: 1rem;
+    /* More rounded corners */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    /* Enhanced shadow */
+    max-width: 650px;
+    /* Adjusted max-width for larger screens */
+    margin: 0 auto;
+}
+
+.contact-form label {
+    color: #333;
+    /* Darker label color for emphasis */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    /* Increased spacing between fields */
+    border-radius: 0.5rem;
+    /* More rounded corners */
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+    /* Subtle background for inputs */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: rgb(213, 166, 78);
+    box-shadow: 0 0 6px rgba(213, 166, 78, 0.5);
+    outline: none;
+}
+
+.contact-form .submit-btn {
+    background-color: rgb(213, 166, 78);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    /* Slightly larger font for visibility */
+    border-radius: 0.75rem;
+    /* More rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #c1945a;
+    transform: scale(1.05);
+    /* Smooth scaling effect */
+}
+
+.contact-form .submit-btn:active {
+    background-color: #a8754b;
+    transform: scale(0.95);
+}

@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="partials/footer.css">
+
+<footer>
+  <div class="container">
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/recipes">Recipes</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="footer-social">
+      <h1>Follow Us</h1>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="footer-contact">
+      <h1>Contact Us</h1>
+      <form action="/contact" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required />
+      </form>
+    </div>
+  </div>
+
+  <!-- All Rights Reserved Section -->
+  <div class="footer-bottom">
+    &copy; <span id="year"></span> <a href="/">Recipe Explorer</a> All Rights Reserved.
+  </div>
+</footer>
+
+<script>
+  // Set the current year dynamically
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>

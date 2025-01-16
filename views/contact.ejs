@@ -1,0 +1,71 @@
+<%- include("partials/header.ejs") %>
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <header class="site-header">
+        <h1 class="site-title">Find Your Flavor</h1>
+        <p class="site-subtitle">
+            Explore mouthwatering recipes from every corner of the globe!</p>
+    </header>
+
+    <main class="main-content">
+        <div class="py-5">
+            <section class="contact-section">
+                <h1 class="contact-title text-center">Get To Know Each Other</h1>
+                <p class="contact-intro text-center">
+                    Have something to ask or simply want to say hello? I'd love to connect with you!
+                </p>
+
+                <!-- Contact Information -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>samnangyornofficial@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Phnom Penh, Cambodia</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <p>Response Time: 24-48 hours</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form mx-auto" style="max-width: 600px;">
+                    <div class="mb-3">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Your email"
+                            class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What's this about?"
+                            class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Your message here..."
+                            class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn btn w-100">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <%- include("partials/footer.ejs") %>

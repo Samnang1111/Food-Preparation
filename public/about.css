@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.site-header {
+    background: linear-gradient(to right, #FFDAB9, #FF6F61);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.site-subtitle {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* About Section Styles */
+.about-section {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fefefecd;
+    border-left: 5px solid #fda085;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.about-img {
+    padding: 20px 0;
+    /* Slightly reduced padding for a cleaner look */
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Smooth transitions for hover effects */
+}
+
+.about-img-smaller {
+    width: 80%;
+    height: auto;
+    border: 3px solid #fda085;
+    /* Maintain border color */
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Shadow for a floating effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.about-img:hover,
+.about-img-smaller:hover {
+    transform: scale(1.1);
+    /* Slightly larger scale for a more dynamic effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+}
+
+/* About Text Styles */
+.about-text {
+    font-size: 1.25rem;
+    /* Maintain a readable font size */
+    line-height: 1.8;
+    /* Ensure good text spacing for readability */
+    padding: 15px;
+    /* Added slightly more padding for a balanced appearance */
+    text-align: justify;
+    /* Justify text for a cleaner, professional layout */
+    color: #333;
+    /* Subtle text color for contrast and readability */
+    font-family: 'Arial', sans-serif;
+    /* Use a clean, modern font */
+    background-color: #f9f9f9;
+    /* Light background to highlight text */
+    border-left: 4px solid #fda085;
+    /* Add a subtle accent with a colored border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    /* Add subtle depth */
+    border-radius: 10px;
+    /* Smooth rounded corners */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.about-text:hover {
+    background-color: #fff;
+    /* Brighten the background on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    /* Enhance shadow effect */
+}

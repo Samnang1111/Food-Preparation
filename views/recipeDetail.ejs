@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="/recipeDetail.css">
+<link rel="stylesheet" href="/partials/footer.css">
+
+<%- include("partials/header.ejs") %>
+
+    <div class="recipe-detail">
+        <h1>
+            <%= recipe.name %>
+        </h1>
+        <img src="<%= recipe.image %>" alt="<%= recipe.name %>">
+        <p>
+            Difficulty: <span>
+                <%= recipe.difficulty %>
+            </span>
+            <span class="divider">|</span>
+            Cuisine: <span>
+                <%= recipe.cuisine %>
+            </span>
+        </p>
+        <p>
+            Calories Per Serving: <span>
+                <%= recipe.caloriesPerServing %>
+            </span> kcal
+        </p>
+        <p>
+            Prep Time: <span>
+                <%= recipe.prepTimeMinutes %>
+            </span> mins
+            <span class="divider">|</span>
+            Cook Time: <span>
+                <%= recipe.cookTimeMinutes %>
+            </span> mins
+        </p>
+
+        <h3>Ingredients:</h3>
+        <ul>
+            <% recipe.ingredients.forEach(ingredient=> { %>
+                <li>
+                    <%= ingredient %>
+                </li>
+                <% }); %>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol>
+            <% recipe.instructions.forEach(step=> { %>
+                <li>
+                    <%= step %>
+                </li>
+                <% }); %>
+        </ol>
+        <a href="/recipes" class="back-button">Back to Recipes</a>
+    </div>
+
+    <%- include("partials/footer.ejs") %>

@@ -1,0 +1,152 @@
+/* Footer Styles */
+footer {
+    background: rgba(239, 230, 230, 0.95);
+    backdrop-filter: blur(10px);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    padding: 40px 20px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #007bff;
+    transform: translateY(-2px);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Utility classes for sections */
+.footer-about,
+.footer-links,
+.footer-social,
+.footer-contact {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-links h1,
+.footer-social h1,
+.footer-contact h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links li a {
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.footer-contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-contact input[type="email"] {
+    padding: 12px 15px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.footer-contact input[type="email"]:hover,
+.footer-contact input[type="email"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+.footer-social .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-social .social-icons a {
+    font-size: 1.5rem;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+    transform: translateY(-3px);
+    color: #007bff;
+}
+
+/* All Rights Reserved Section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.footer-bottom a {
+    color: #007bff;
+    text-decoration: underline;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-social,
+    .footer-contact {
+        min-width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .footer-contact input[type="email"] {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer-social .social-icons {
+        justify-content: center;
+    }
+}

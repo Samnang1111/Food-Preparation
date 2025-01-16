@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs") %>
+  <link rel="stylesheet" href="/recipes.css">
+  <header class="site-header">
+    <h1 class="site-title">Find Your Flavor</h1>
+    <p class="site-subtitle">
+      Discover diverse and delicious recipes from every continent!</p>
+  </header>
+  <div class="recipe-list">
+    <% recipes.forEach(recipe=> { %>
+      <div class="recipe-card">
+        <a href="/recipes/<%= recipe.id %>">
+          <img src="<%= recipe.image %>" alt="<%= recipe.name %>">
+          <h2>
+            <%= recipe.name %>
+          </h2>
+          <p>Tags: <%= recipe.tags.join(', ') %></p>
+        <p>Rating: <%= recipe.rating %> ⭐ | Reviews: <%= recipe.reviewCount %></p>
+      </a>
+    </div>
+  <% }); %>
+</div>
+
+<div class="pagination">
+  <% if (page > 1) { %>
+    <a href="/recipes?page=<%= page - 1 %>">&laquo; Previous</a>
+  <% } %>
+  <% if (page * limit < total) { %>
+    <a href="/recipes?page=<%= page + 1 %>">Next &raquo;</a>
+  <% } %>
+</div>
+
+
+<%- include("partials/footer.ejs") %>
