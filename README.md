@@ -2,6 +2,10 @@
 
 Welcome to the Food Recipes Website! This dynamic web application is designed to help users discover and explore a wide range of delicious recipes through a user-friendly interface.
 
+## Online Demo
+
+# [Culinary Compass.](https://culinary-compass-ngsk.onrender.com)
+
 ## Features
 
 ### 1. **Friendly User Interface (UI)**
@@ -16,13 +20,19 @@ Welcome to the Food Recipes Website! This dynamic web application is designed to
 - Implemented search logic to allow users to quickly find recipes based on keywords or ingredients.
 
 ### 4. **Built Using Modern Web Technologies**
-- **Frontend**: 
-  - CSS for styling.
-  - EJS (Embedded JavaScript) for rendering dynamic content.
-  - Bootstrap Framework for responsive and consistent design.
-- **Backend**: 
-  - Node.js and Express.js for server-side logic.
-- **API Integration**: RESTful API to fetch recipe data.
+- #### **Frontend**:
+  
+  - **CSS** for styling.
+  - **EJS (Embedded JavaScript)** for rendering dynamic content.
+  - **Bootstrap Framework** for responsive and consistent design.
+    
+- #### **Backend**:
+  
+  - **Node.js** and **Express.js** for server-side logic.
+    
+- **API Integration**
+  
+  - **RESTful API** to fetch recipe data.
 
 ## Installation and Setup
 
@@ -50,10 +60,6 @@ Follow these steps to set up and run the project locally:
 
 5. **Access the website:**
    Open your browser and navigate to `http://localhost:3000`.
-
-## Online Demo
-
-Note: GitHub cannot host Node.js applications directly. You can view a live demo of this project at [https://culinary-compass-ngsk.onrender.com](https://culinary-compass-ngsk.onrender.com).
 
 ## Project Structure
 
